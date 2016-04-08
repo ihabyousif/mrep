@@ -1,0 +1,2 @@
+serviceClass: com.sis.mrep.client.proxy.EmployeeManager
+path: EC06F2FDD88B82FC554F8B2A6B514408.gwt.rpc

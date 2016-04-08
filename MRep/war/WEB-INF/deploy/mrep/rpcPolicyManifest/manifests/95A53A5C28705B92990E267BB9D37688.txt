@@ -1,0 +1,2 @@
+serviceClass: com.sis.mrep.client.proxy.AdminManager
+path: DD7A78E444CE181CAA12FBAA468ED608.gwt.rpc

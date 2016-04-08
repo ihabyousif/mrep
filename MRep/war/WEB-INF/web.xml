@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+         
+         <listener><listener-class>com.sis.mrep.server.service.session.SessionListener</listener-class></listener>
+         
+    <session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.sis.mrep.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/mrep/greet</url-pattern>
+  </servlet-mapping>
+   
+          <servlet>
+      <servlet-name>SessionServiceImpl</servlet-name>
+      <servlet-class>com.sis.mrep.server.service.SessionServiceImpl
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>SessionServiceImpl</servlet-name>
+      <url-pattern>/mrep/SessionServlet</url-pattern>
+   </servlet-mapping>
+   
+   
+             <servlet>
+      <servlet-name>EmployeeManager</servlet-name>
+      <servlet-class>com.sis.mrep.server.service.EmployeeManagerImpl
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>EmployeeManager</servlet-name>
+      <url-pattern>/mrep/EmployeeManager</url-pattern>
+   </servlet-mapping>
+   
+             <servlet>
+      <servlet-name>AdminManager</servlet-name>
+      <servlet-class>com.sis.mrep.server.service.AdminManagerImpl
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>AdminManager</servlet-name>
+      <url-pattern>/mrep/AdminManager</url-pattern>
+   </servlet-mapping>
+   
+               <servlet>
+      <servlet-name>SecurityManager</servlet-name>
+      <servlet-class>com.sis.mrep.server.service.SecurityManagerImpl
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>SecurityManager</servlet-name>
+      <url-pattern>/mrep/SecurityManager</url-pattern>
+   </servlet-mapping>  
+
+               <servlet>
+      <servlet-name>ReportingManager</servlet-name>
+      <servlet-class>com.sis.mrep.server.service.ReportingManagerImpl
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ReportingManager</servlet-name>
+      <url-pattern>/mrep/ReportingManager</url-pattern>
+   </servlet-mapping>  
+
+
+   
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>MRep.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

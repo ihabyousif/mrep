@@ -1,0 +1,2 @@
+serviceClass: com.sis.mrep.client.proxy.ReportingManager
+path: 8A7118DF677E5044F628DEAA0EAEA085.gwt.rpc

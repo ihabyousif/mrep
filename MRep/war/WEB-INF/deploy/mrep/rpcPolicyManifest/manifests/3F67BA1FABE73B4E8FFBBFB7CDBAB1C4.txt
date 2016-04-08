@@ -1,0 +1,2 @@
+serviceClass: com.sis.mrep.client.proxy.SecurityManager
+path: A081D32368E18F590880DF1BD23647B2.gwt.rpc
